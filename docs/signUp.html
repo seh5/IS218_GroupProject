@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<!--Head with links-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Sign Up</title>
+</head>
+
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+<!--Navbar-->
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid" style="color: #343F56">
+            <a class="navbar-brand" href="index.html"><h1>Student Task Manager</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color:#387C6D;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color:#387C6D;">My Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color:#387C6D;">My Account</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Main Image & Login/SignUp Prompt-->
+<div class="hero-image">
+    <div class="hero-form" style="background-color: white; color: black;">
+        <h2 style="text-align: center;">Create a New Account </h2>
+        <form>
+            <div class="form-group row">
+                <label for="fname" class="col-sm-3 col-form-label">First Name</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="fname" placeholder="First Name">
+                </div>
+            </div> <br>
+            <div class="form-group row">
+                <label for="lname" class="col-sm-3 col-form-label">Last Name</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                </div>
+            </div> <br>
+            <div class="form-group row">
+                <label for="email" class="col-sm-3 col-form-label">Email Address</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="email" placeholder="Email Address">
+                </div>
+            </div><br>
+            <div class="form-group row">
+                <label for="username" class="col-sm-3 col-form-label">Username</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                </div>
+                <center><p class ="smallText">Usernames can only contain letters, numbers and periods.
+                Usernames cannot begin with periods.</p></center>
+            </div>
+            <div class="form-group row">
+                <label for="password" class="col-sm-3 col-form-label">Password</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <center><p class ="smallText">Password must be 8-30 characters, must contain
+                atleast one uppercase & one lowercase letter, and must contain atleast
+                one digit</p></center>
+            </div>
+            <center><button type="submit" class="btn btn-dark">Sign Up</button>
+                <p>Already have an account? Login <a href="signIn.html">here</a></p>
+            </center>
+        </form>
+    </div>
+</div>
+
+
+
+</body>
+</html>
