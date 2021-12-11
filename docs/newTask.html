@@ -69,10 +69,15 @@
             <div class="form-group row">
                 <label for="urgency" class="col-sm-3 col-form-label">Urgency</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control" id="urgency" placeholder="Task Urgency">
+                    <select class="form-select" aria-label="Default select example" name="urgency" id="urgency">
+                        <option selected>Urgency</option>
+                        <option value="1">Normal</option>
+                        <option value="2">Important</option>
+                        <option value="3">Very Important</option>
+                    </select>
                 </div>
             </div>
-            <center><button type="submit" class="btn btn-dark">Create Task</button></center>
+            <br><center><button type="submit" class="btn btn-dark">Create Task</button></center>
         </form>
     </div>
 </div>
