@@ -43,20 +43,15 @@
     </nav>
 </div>
 
-<--PHP STARTS HERE-->
 <?php
-    if(isset($_POST['username'])){
-        $username=$_POST['username'];
-        while(
-    }
-
+    require manageAccount.php;
 ?>
 <!--Main Image & Login/SignUp Prompt-->
 <div class="hero-image2">
     <div class="title" style="float: right; text-align: right; width:30%;"><h3>Hello First Last</h3></div>
     <div class="hero-form" style="background-color: white; color: black;">
         <h2 style="text-align: center;">Change Username</h2>
-        <form>
+        <form action="manageAccount.php" method="post">
             <div class="form-group row">
                 <label for="username" class="col-sm-3 col-form-label">New Username</label>
                 <div class="col-sm-9">
@@ -67,7 +62,7 @@
             <center> <button type="submit" class="btn btn-dark">Save</button> </center>
         </form>
         <br><br><h2 style="text-align: center;">Change Password</h2>
-        <form>
+        <form action="manageAccount.php" method="post">
             <div class="form-group row">
                 <label for="username" class="col-sm-3 col-form-label">New Password</label>
                 <div class="col-sm-9">
