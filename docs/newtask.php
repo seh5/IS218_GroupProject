@@ -19,10 +19,11 @@ class Products{
 /* 2a : Create 4 property: categoryID, ProductCode, ProductName, listPrice*/
 #Class and Objects Slide 7
 
-    public $taskNum;
-    public $userID;
+    public $username;
     public $task;
     public $taskDate;
+    public $urgency;
+    public $desc
 
 /* 2b : Create four functions in the class which can do the following four tasks
     i. Display all products (whole records) in the table products
@@ -31,18 +32,29 @@ class Products{
     iv. Update a product’s name
 */
 #Class and Objects Slide 7
-    public function i_display($taskNum, $userID, $task, $taskDate){
+require_once 'mainTask.html';
+    public function i_display($username, $task, $taskDate, $urgency, $desc){
 
-        $this->taskNum=$taskNum;
-        $this->userID=$userID;
+        $this->username=$username;
         $this->task=$task;
         $this->taskDate=$taskDate;
-        $sql = "insert into products (taskNum, userID, task, taskDate) values ('$taskNum','$userID', '$task', '$taskDate')";
+        $this->urgency=$urgency;
+        $this->desc=$desc;
+
+
+        $sql = "insert into products (username, task, taskDate, urgency,desc) values ('$username','$task', '$taskDate', '$uregency','$desc')";
         $results = runQuery($sql);
-        return $results;
+
+        if(count($results) > 0)
+        {
+            echo "<table border=\"1\"><tr><th>ID</th><th>Email</th><th>FirstName</th><th>LastName</th><th>Phone</th><th>Birthday</th><th>Gender</th><th>Password</th></tr>";
+            foreach ($results as $row) {
+                echo "<><td>".$row["id"]."</td><td>".$row["email"]."</td><td>".$row["fname"]."</td><td>".$row["lname"]."</td><td>".$row["phone"]."</td><td>".$row["birthday"]."</td><td>".$row["gender"]."</td><td>".$row["password"]."</td></tr>";
+            }
+
+        }
 
     }
-
     public function ii_del($taskNum, $task){
         $sql ="delete from tasks where task = '$task' ";
         $results = runQuery($sql);

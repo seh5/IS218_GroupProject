@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $passwordErr = "Password must include at least one number";
         }
         elseif(!preg_match("#[A-Z]+#",$password)) {
-            $passwordErr = "Password must include at least one captial letter";
+            $passwordErr = "Password must include at least one capital letter";
         }
         elseif(!preg_match("#[a-z]+#",$password)) {
             $passwordErr = "Password must include at least one lowercase letter";

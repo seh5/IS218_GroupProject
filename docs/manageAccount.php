@@ -6,7 +6,7 @@ if(isset($_POST['username'])){
     if (!preg_match('/[\'^$%&*()}{@#~?<>,|=_+¬-]/', $_POST['username'])||
         strpos($_POST['username'],'..') != false ||
         strpos($_POST['username'], '.') == 0 ||
-        strpos($_POST['username'], '.') == strlen($_POST['username'])-1 || $_POST['username'] == "leslie") {
+        strpos($_POST['username'], '.') == strlen($_POST['username'])-1) {
         echo "Your New Username is invalid. Please Enter a Username that meets the above requirements";
     }
     else{
