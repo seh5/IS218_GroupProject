@@ -43,15 +43,24 @@
     </nav>
 </div>
 
+<--PHP STARTS HERE-->
+<?php
+    if(isset($_POST['username'])){
+        $username=$_POST['username'];
+        while(
+    }
+
+?>
 <!--Main Image & Login/SignUp Prompt-->
 <div class="hero-image2">
+    <div class="title" style="float: right; text-align: right; width:30%;"><h3>Hello First Last</h3></div>
     <div class="hero-form" style="background-color: white; color: black;">
         <h2 style="text-align: center;">Change Username</h2>
         <form>
             <div class="form-group row">
                 <label for="username" class="col-sm-3 col-form-label">New Username</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control" id="username" placeholder="Please Enter New Username">
+                    <input type="text" class="form-control" name="username" id="username" placeholder="Please Enter New Username">
                 </div>
             </div>
             <p label="usernameError"></p>
@@ -62,13 +71,13 @@
             <div class="form-group row">
                 <label for="username" class="col-sm-3 col-form-label">New Password</label>
                 <div class="col-sm-9">
-                    <input type="password" class="form-control" id="password" placeholder="Please Enter New Password">
+                    <input type="password" class="form-control" name="new" id="password" placeholder="Please Enter New Password">
                 </div>
             </div> <br>
             <div class="form-group row">
                 <label for="password" class="col-sm-3 col-form-label">Current</label>
                 <div class="col-sm-9">
-                    <input type="password" class="form-control" id="old" placeholder="Please Enter Previous Password">
+                    <input type="password" class="form-control" name="old" id="old" placeholder="Please Enter Previous Password">
                 </div>
                 <p label="passwordError"></p>
             </div>

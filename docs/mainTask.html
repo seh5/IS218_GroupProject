@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+<?php include 'newtask.php';?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 <!--Navbar-->
@@ -44,12 +44,67 @@
 </div>
 
 <!--Main Image & Login/SignUp Prompt-->
-<div class="hero-image">
-    <div class="hero-text">
-        <h1>Start Managing Your Campus<br> Events & Assignments</h1>
-        <p>intro to website goes here</p>
-        <p><button type="button" class="btn btn-dark" onclick="location.href='signIn.html';">Login</button>&emsp;
-            <button type="button" class="btn btn-dark" onclick="location.href='signUp.html';">Sign Up</button></p>
+<div class="title" style="float: left; text-align: left; width:30%;"><h2>My Tasks</h2></div>
+<div class="title" style="float: right; text-align: right; width:30%;"><h3>Hello First Last</h3></div>
+<div class="task-page">
+    <div class="todo">
+        <div class="content">
+        <div class="title" style="float: left; text-align: left; width:30%;"><h3>To-Do Tasks</h3></div>
+        <div class="title" style="float: right; text-align: right; width:30%;"><button type="button" class="btn btn-dark" onclick="location.href='signIn.html';">Create New Task</button></div>
+        <table class="table table-sm">
+            <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Task</th>
+                <th scope="col">Due Date</th>
+                <th scope="col">Urgency</th>
+                <th scope="col">Completed?</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Title</th>
+                <td>Description goes here</td>
+                <td>date goes here</td>
+                <td>urgency</td>
+                <td>checkbox</td>
+                <th><button type="button" class="btn btn-dark" onclick="location.href='signIn.html';">Edit</button></th>
+                <th><button type="button" class="btn btn-dark" onclick="location.href='signIn.html';">Delete</button></th>
+            </tr>
+            </tbody>
+        </table>
+            </div>
+    </div>
+    <div class="completed">
+        <div class="content">
+        <h3>Completed Tasks</h3>
+        <table class="table table-sm">
+            <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Task</th>
+                <th scope="col">Due Date</th>
+                <th scope="col">Urgency</th>
+                <th scope="col">Completed?</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Title</th>
+                <td>Description goes here</td>
+                <td>date goes here</td>
+                <td>urgency</td>
+                <td>checkbox</td>
+                <th><button type="button" class="btn btn-dark" onclick="location.href='signIn.html';">Edit</button></th>
+                <th><button type="button" class="btn btn-dark" onclick="location.href='signIn.html';">Delete</button></th>
+            </tr>
+            </tbody>
+        </table>
+        </div>
     </div>
 </div>
 
